@@ -14,6 +14,7 @@ c = a + b
 print(sqrt(c))
 
 # quello che dice chatgpt
+
 import math
 
 def calcola_ipotenusa(cateto1, cateto2):
