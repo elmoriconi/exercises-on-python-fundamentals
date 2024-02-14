@@ -13,6 +13,15 @@ c = a + b
 
 print(sqrt(c))
 
+# oppure
+
+import math
+
+cateto1 = 10123
+cateto2 = 30.456
+
+ipotenusa = math.sqrt(cateto1**2 + cateto2**2)
+
 # quello che dice chatgpt
 
 import math
