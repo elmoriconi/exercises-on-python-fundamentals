@@ -1,5 +1,5 @@
                     
-from math 
+import math 
                                         
 a = 10.123 ** 2
 b = 30.456 ** 2
