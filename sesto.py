@@ -5,8 +5,7 @@
 import random
 
 lista = []
-n = 1000000
-for i in range(n):
+for i in range(1000000):
     x=random.randint(10, 20)  
     lista.append(x)
 
@@ -14,7 +13,7 @@ somma = 0
 for i in lista:
     somma = somma + i
 
-media = somma/n
+media = somma/1000000
 
 print(somma)
 print(media)
