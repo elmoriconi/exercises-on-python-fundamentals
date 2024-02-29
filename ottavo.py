@@ -5,7 +5,7 @@
 import random   
 
 lista = []
-for i in range(101):
+for i in range(100):
     x=random.randint(1, 10)  
     lista.append(x)
 
