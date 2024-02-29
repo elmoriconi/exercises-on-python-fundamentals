@@ -14,3 +14,11 @@ for i in lista:
     somma = somma + i
 
 print(somma)
+
+#moltiplicare tutti i valori
+
+totale = 1
+for i in lista:
+    totale = totale * i
+
+print(totale)
