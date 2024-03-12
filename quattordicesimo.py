@@ -72,11 +72,8 @@ a = "987532"
 print(StringToList(a))
 
 
-
-
-
 #Modificare la funzione Combinazioni per generare una lista di liste del tipo
-#[[0,0,0,0],[0,0,0,1],[0,0,0,2]...]
+#[[0,0,0,0],[0,0,0,1],[0,0,0,2]...]   ESERCIZIO PER CASA
 """
 def Combinazioni():
     digits = []
