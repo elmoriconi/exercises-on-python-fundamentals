@@ -1,3 +1,8 @@
+# Esercizio
+# definire la funzione ColoreRandom() che torna una stringa casuale tra "rosso", 
+# "giallo", "verde", "blu", "arancio", "ciano", ...
+
+
 import random
 
 def ColoreRandom():
