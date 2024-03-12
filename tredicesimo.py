@@ -44,3 +44,27 @@ Arit(11, 2, 3)
 Arit(101, 1000, 2)
 a, b, c = 10, 20, 30
 Arit(b, c, a)
+
+
+def Cambia(a, b):
+    a = b
+    print(a)   #stampa 200
+
+
+a = 100
+b = 200
+Cambia(a, b)
+print(a)   #stampa 100
+
+def Somma(a, b):
+    c = a + b
+    return c
+
+print(Somma(1, 2)) #stampa 3
+print(Somma("a", "b")) #stampa a e b
+
+def Divisione(a, b):
+    return a // b, a % b
+
+h, i = a // b, a % b 
+
