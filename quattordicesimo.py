@@ -56,8 +56,8 @@ def Combinazioni():
     digits = []
     for i in range(0, 10000):
         s = str(i)
-        while len(s) < 4:
-            s = "0" + s
+        while len(s) < 4:               #oppure s = s.zfill(4)
+            s = "0" + s                 #oppure s = "0" * (4 - len(s)) + s
         digits.append(s)
     return digits
 
