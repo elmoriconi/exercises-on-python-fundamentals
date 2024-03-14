@@ -12,7 +12,7 @@ print(StringToList(a))
 
 fin = open("alice.txt", "r")    # = apri il file che si chiama "...", "r" significa IN LETTURA. 
                                 #Un file si può appendere in lettura, scrittura o per appendere ("w")
-                                #fin è un boh
+                                #fin è una variabile
 linee = fin.readlines()         #linee è una lista di stringhe
 fin.close()
 #readlines legge tutte le righe incluso il carattere a capo \n (eol/eoln). Per levare \n faccio 'stripping':
