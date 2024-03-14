@@ -39,4 +39,25 @@ parole = []
 for i in linee:
     parole.extend(i.split(" "))
 print(parole)
-    
+
+
+
+#Data una lista di stringhe, eliminare dalla lista tutte le stringhe vuote
+#se la lunghezza della stringa è minore di 1, la stringa è vuota.
+
+def vuota(ls):
+    return len(ls.strip()) > 0
+ 
+ls = ["uno", "due", "", "", "", "", "", "fine"]
+print(list(filter(vuota, ls)))
+
+
+#altrimenti
+"""
+ls = ["uno", "due", "", "", "", "", "", "fine"]
+lista = []
+for x in ls:
+    if len(x) > 0:
+        lista.append(x)
+print(lista)
+"""
