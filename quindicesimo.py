@@ -16,6 +16,7 @@ fin = open("alice.txt", "r")    # = apri il file che si chiama "...", "r" signif
 linee = fin.readlines()         #linee è una lista di stringhe
 fin.close()
 #readlines legge tutte le righe incluso il carattere a capo \n (eol/eoln). Per levare \n faccio 'stripping':
+#si può anche usare read che invece legge tutto come un'unica stringa
 l1 = []
 for linea in linee:
     l1.append(linea.strip())
@@ -61,3 +62,36 @@ for x in ls:
         lista.append(x)
 print(lista)
 """
+
+#Contare quanti caratteri ci sono in alice.txt
+#Contare quanti caratteri NON spazi bianchi ci sono in alice.txt
+#Contare quanti caratteri alfanumerici [a-z A-Z 0-9] ci sono in alice.txt
+
+#conto tutti i caratteri
+fin = open("alice.txt", "r")
+linee = fin.readlines()
+fin.close()
+s = 0
+for l in linee:
+    s = s + len(l)
+print(s)
+
+#conto senza gli spazi bianchi
+fin = open("alice.txt", "r")
+linee = fin.read()
+fin.close()
+t = 0
+for c in linee:
+   if c != " ":
+       t += 1
+print(t)
+
+#conto solo caratteri alfanumerici
+fin = open("alice.txt", "r")
+alice = fin.read()
+fin.close()
+alfanum = 0
+for c in alice:
+    if c.isalnum():
+        alfanum += 1
+print(alfanum)
