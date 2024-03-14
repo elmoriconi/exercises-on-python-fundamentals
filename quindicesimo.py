@@ -21,3 +21,22 @@ for linea in linee:
     l1.append(linea.strip())
 linee = l1
 print(linee)
+
+s = "alfa;beta;gamma"
+#come posso ottenere la lista ["alfa", "beta, "gamma"]?
+print(s.split(";"))     #usa ";" come separatore
+
+#Dato alice.txt, stamare riga per riga tutte le parole che la compongono
+
+fin = open("alice.txt", "r")
+linee = fin.readlines()
+fin.close()
+l1 = []
+for linea in linee:
+    l1.append(linea.strip())
+linee = l1
+parole = []
+for i in linee:
+    parole.append(i.split(" "))
+print(parole)
+    
