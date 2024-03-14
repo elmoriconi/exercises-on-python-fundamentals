@@ -5,7 +5,7 @@
 import random
 
 def ColoreRandom():
-    colori = ["rosso", "giallo", "verde", "blu", "arancio", "ciano"]
+    colori = ["rosso", "giallo", "verde", "blu", "arancio", "ciano", "rosa"]
     return colori[random.randint(0, len(colori)-1)]
 
 
@@ -71,22 +71,31 @@ def StringToList(a):
 a = "987532"
 print(StringToList(a))
 
+"""
+alternativa
+
+def StringDigitsToList(sd):
+    lista = []
+   
+    for c in sd :
+        lista.append(int(c))
+    return lista
+
+print(StringDigitsToList("945243"))
+
+"""
 
 #Modificare la funzione Combinazioni per generare una lista di liste del tipo
 #[[0,0,0,0],[0,0,0,1],[0,0,0,2]...]   ESERCIZIO PER CASA
-"""
+
 def Combinazioni():
     digits = []
     for i in range(0, 10000):
         s = str(i)
         while len(s) < 4:
             s = "0" + s
-        lista = []
-        for c in s:
-            lista.append()
-        digits.append(s)
+        lista = [int(x) for x in s]
+        digits.append(lista)
     return digits
 
 print(Combinazioni())
-
-"""
