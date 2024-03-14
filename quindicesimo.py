@@ -37,6 +37,6 @@ for linea in linee:
 linee = l1
 parole = []
 for i in linee:
-    parole.append(i.split(" "))
+    parole.extend(i.split(" "))
 print(parole)
     
