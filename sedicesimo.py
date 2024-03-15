@@ -45,8 +45,13 @@ for i in linee:
     }
     print(diz)
 
+
+
+
+
+
 #Leggere da input una stringa. Se minore di "lettera", stampare 
 #la stringa "minore", se maggiore di "lettera" e minore di "tocco", stampare 
 #"intermedia", se maggiore di "tocco" e minore dui "what" stampare "maggiore", 
-#altrimenti stampare "massima"
+#altrimenti stampare "massima"  (per minore o maggiore si intende ordine alfabetico)
 
