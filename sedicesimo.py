@@ -24,9 +24,10 @@ else:
     print("boh")
 
 
-#Esercizio: leggere da un file (persone.txt) i nomi, cognomi e età di un gruppo 
-#di persone. Organizzarli in un dizionario la cui chiave è il cognome e il cui
-#valore è una tupla contenente i tre valori letti.
+#Esercizio: leggere da un file (persone.txt) i nomi, cognomi e età di un gruppo di persone. 
+#Stamparli come: Nome: , Cognome: , Età: .
+#Organizzarli in un dizionario la cui chiave è il cognome e il cui valore è una tupla 
+#contenente i tre valori letti.
     
 fin = open("persone.txt", "r")
 linee = fin.readlines()
