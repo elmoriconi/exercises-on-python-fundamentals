@@ -37,15 +37,24 @@ for i in linee:
     nome = i.strip().split(",")
     print("Nome: ", nome[0], "Cognome: ", nome[1], "Età: ", nome[2])
 
+diz = {}
+for v in nome:
+    nome = v.split(",")
+    diz[nome[1]] = (nome[0], nome[1], nome[2])
+for e in diz:
+    print("Key: ", e, "Value: ", diz[e])
 
 
+
+
+"""
     diz = {
         "Nome" : nome[0],
         "Cognome" : nome[1],
         "Età" : nome[2]
     }
     print(diz)
-
+"""
 
 
 
