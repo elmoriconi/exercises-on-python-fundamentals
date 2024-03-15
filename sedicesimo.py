@@ -37,14 +37,14 @@ for i in linee:
     print("Nome: ", nome[0], "Cognome: ", nome[1], "Età: ", nome[2])
 
 
-"""
+
     diz = {
         "Nome" : nome[0],
         "Cognome" : nome[1],
         "Età" : nome[2]
     }
     print(diz)
-"""
+
 #Leggere da input una stringa. Se minore di "lettera", stampare 
 #la stringa "minore", se maggiore di "lettera" e minore di "tocco", stampare 
 #"intermedia", se maggiore di "tocco" e minore dui "what" stampare "maggiore", 
