@@ -122,7 +122,7 @@ print("I giocatori che hanno giocato sia per l'Argentina che per l'Italia sono: 
 filejson = open("all-world-cup-players.json", "r")
 worldcup = json.load(filejson)
 filejson.close()
-lista = []            #inserisco tutti i nomi in una lista 
+lista = []                                          #inserisco tutti i nomi in una lista 
 for i in worldcup:
     x = i.get("FullName")
     lista.append(x)
@@ -130,17 +130,25 @@ diz = {c: lista.count(c) for c in lista}            #conto quante volte si ripet
 calciatore = " "
 partecipazioni = 1
 for a in diz:
-    y = a.get(a)
-    if y > partecipazioni:
+    if diz[a] > partecipazioni:
         calciatore = a
+        partecipazioni = diz[a]
     else:
         continue
-print(calciatore)
+print(calciatore)                                   #perché non mi stampa nessun nome?
 
 # 9) Trovare quale squadra di calcio ha fornito più calciatori per la coppa del mondo. Organizzare per nazione. 
 #    Cioè quale squadra italiana ha fornito più calciatori per la coppa del mondo e quanti, quale squadra francese, ...
 
-
+filejson = open("all-world-cup-players.json", "r")
+worldcup = json.load(filejson)
+filejson.close()
+lista = []                                              #inizzializzo una lista in cui scrivere tutti i club
+for i in worldcup:
+    x = i.get("Club")
+    lista.append(x)
+diz = {c: lista.count(c) for c in lista}                #conto quante volte si ripete ogni club
+#non capisco in che ordine fare le cose...
 
 #Conta quanti calciatori per ogni squadra. La key è team e il value è il numero di calciatori 
 #quanticalciatori = dict()
