@@ -143,12 +143,41 @@ print(calciatore)                                   #perché non mi stampa nessu
 filejson = open("all-world-cup-players.json", "r")
 worldcup = json.load(filejson)
 filejson.close()
-lista = []                                              #inizzializzo una lista in cui scrivere tutti i club
+lista1 = []
+for i in worldcup:
+    lista2 = []
+    x = i.get("ClubCountry")
+    lista2.append(x)
+    y = i.get("Club")
+    lista2.append(y)
+    lista1.append(lista2)
+diz = {c: lista1.count(c) for c in lista1}
+print(diz)                                          #no non va bene nemmeno così
+
+"""
+lista = []
+for i in worldcup:
+    diz = {
+        "Nazione": " ",
+        "Club": " "
+    }
+    x = i.get("ClubCountry")
+    diz["Nazione"] = x
+    y = i.get("Club")
+    diz["Club"] = y
+    lista.append(diz)
+diz2 = {c: lista.count(c) for c in lista}
+print(diz2)
+"""
+"""
+listaclub = []                                              #inizzializzo una lista in cui scrivere tutti i club
 for i in worldcup:
     x = i.get("Club")
-    lista.append(x)
-diz = {c: lista.count(c) for c in lista}                #conto quante volte si ripete ogni club
+    listaclub.append(x)
+diz = {c: listaclub.count(c) for c in listaclub}                #conto quante volte si ripete ogni club
 #non capisco in che ordine fare le cose...
+"""
+
 
 #Conta quanti calciatori per ogni squadra. La key è team e il value è il numero di calciatori 
 #quanticalciatori = dict()
