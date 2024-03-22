@@ -21,7 +21,24 @@ def GeneraLista(N):
         lista.append(x)
     return lista
 
-print(GeneraLista(10))
+def ContaUguali(ls, lscheck):
+    uguali = 0
+    posizdiversa = 0
+    for i in range(len(ls)):
+        if lscheck[i] == ls[i]:
+            uguali += 1
+            ls.pop(i)
+            lscheck.pop(i)
+    for i in lscheck:
+        if i in ls:
+            posizdiversa += 1
+            ls.remove(i)
+    print(ls)
+    print(lscheck)
+    return uguali, posizdiversa
 
-
-#def ContaUguali(ls, lscheck):
+ls = GeneraLista(7)
+lscheck = GeneraLista(7)
+print(ls)
+print(lscheck)
+print(ContaUguali(ls, lscheck))
