@@ -22,6 +22,8 @@ def GeneraLista(N):
     return lista
 
 def ContaUguali(ls, lscheck):
+    ls = ls.copy()
+    lscheck = lscheck.copy()
     uguali = 0
     posizdiversa = 0
     for i in range(len(ls)):
