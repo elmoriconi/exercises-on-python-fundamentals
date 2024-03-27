@@ -37,12 +37,17 @@ N = int(input("Inserire il numero di simboli: "))
 M = int(input("Inserire la lunghezza della lista: "))
 l1 = GeneraLista(N, M)
 strike = 0 
+mosse = 1
 while strike!= M:
+    if mosse > 10:
+        print("Hai perso, la sequenza è: ", l1)
+        exit(-1)
     l2 = input("Inserire la sequenza: ")
     lista = ConvertiStringaDigitInListaNumeri(l2)
     strike, ball = ContaUgualiInStessoEInAltro(l1, lista)
     print("Strike: ", strike, "Ball: ", ball)
-print("Hai vinto! ", l1)
+    mosse += 1
+print("Hai vinto! Numero di mosse: ", mosse)
 
 
 """
